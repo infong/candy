@@ -2,7 +2,7 @@
   "name": "candy",
   "version": "0.1.7",
   "description": "a micro bbs system based on duoshuo.com apis",
-  "main": "server.js",
+  "main": "index.js",
   "author": "turing",
   "license": "MIT",
   "scripts": {
@@ -24,7 +24,7 @@
     "social"
   ],
   "dependencies": {
-    "theme": "*",
+    "theme": "~0.0.6",
     "async": "~0.2.10",
     "duoshuo":"0.1.2",
     "moment": "~2.5.1",
