@@ -19,4 +19,4 @@ new server(configs)
     .models(models)
     .ctrlers(ctrlers)
     .routes(routes)
-    .run();
+    .run(8699);

@@ -37,12 +37,14 @@ exports = module.exports = function(ctrlers, theme) {
                     if (err) return next(err);
                     if (!threads) return next(new Error('404'));
                     if (pager.max > 1 && threads.length === 0) return next(new Error('404'));
-                    theme.render('flat/index', {
-                        threads: threads,
-                        page: pager
-                    }, function(err, html) {
-                        if (err) return next(err);
-                        return res.send(html);
+                    board.lsName(function(err, boards) {
+                        theme.render('flat/index', {
+                            threads: threads,
+                            page: pager
+                        }, function(err, html) {
+                            if (err) return next(err);
+                            return res.send(html);
+                        });
                     });
                 });
             }

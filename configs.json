@@ -1,18 +1,19 @@
 {
-    "name": "Candy",
-    "url": "http://candy.com",
-    "desc": "简单优雅的次世代论坛",
+    "name": "Vim Talk",
+    "url": "http://t.vim.pw",
+    "desc": "",
     "views": "./node_modules/candy-theme-flat",
     "public": "./public",
     "uploads": "./public/uploads",
+    "env": "production",
     "database": {
-        "name": "candy"
+        "name": "vimpw"
     },
     "session": {
         "store": true
     },
     "duoshuo": {
-        "short_name": "candydemo",
-        "secret": "055834753bf452f248602e26221a8345"
+        "short_name": "vimpw",
+        "secret": "9e322a6c8d4c78882092dca4a6896265"
     }
 }
