@@ -40,6 +40,7 @@ exports = module.exports = function(ctrlers, theme) {
                     board.lsName(function(err, boards) {
                         theme.render('flat/index', {
                             threads: threads,
+                            boards: boards,
                             page: pager
                         }, function(err, html) {
                             if (err) return next(err);
